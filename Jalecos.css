@@ -1,0 +1,74 @@
+body{
+    background-color: white;
+}
+nav{
+    background-color: aqua;
+    padding: 40px;
+    border-radius: 15px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0px 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 23px;
+    transition: color 0.3s;
+}
+nav ul li a:hover{
+    color:blue;
+}
+nav ul li .content{
+    display: none;
+    position: absolute;
+    background-color:aqua;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 10px;
+}
+nav ul li .content li{
+    margin: 0;
+}
+nav ul li .content li a{
+    padding: 10px 15px;
+}
+nav ul li:hover .content{
+    display: block;
+}
+.container{
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+.card {
+    background-color:aqua;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    flex: 1; 
+    max-width: 350px; 
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+.card p {
+    color: #666;
+}
+.imgCards{
+    width: 100%;
+}
+button{
+    background-color: aqua;
+    border-radius: 30px;
+}

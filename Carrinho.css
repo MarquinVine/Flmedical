@@ -1,0 +1,104 @@
+main {
+    background-color:aqua;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza a tabela do carrinho */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Estiliza o input de quantidade */
+input.quantidade {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estiliza o botão de remover */
+button.remover-produto {
+    background-color:aqua;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estiliza o total final */
+.total-final {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.total-final h3 {
+    color: #333;
+}
+
+#total-final {
+    color:aqua;
+}
+
+button.remover-produto:hover {
+    background-color: #ef3950;
+}
+body{
+    background-color: white;
+}
+nav{
+    background-color: aqua;
+    padding: 40px;
+    border-radius: 15px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0px 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 23px;
+    transition: color 0.3s;
+}
+nav ul li a:hover{
+    color:blue;
+}
+nav ul li .content{
+    display: none;
+    position: absolute;
+    background-color:aqua;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 10px;
+}
+nav ul li .content li{
+    margin: 0;
+}
+nav ul li .content li a{
+    padding: 10px 15px;
+}
+nav ul li:hover .content{
+    display: block;
+}
